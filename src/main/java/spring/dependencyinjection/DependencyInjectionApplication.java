@@ -14,6 +14,7 @@ public class DependencyInjectionApplication {
 
 		String greeting = myController.sayHello();
 		System.out.println(greeting);
+		System.out.println("------------- Property");
 
 	}
 
