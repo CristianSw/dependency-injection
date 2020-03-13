@@ -5,15 +5,15 @@ import org.springframework.stereotype.Controller;
 import spring.dependencyinjection.services.GreetingService;
 
 @Controller
-public class MyController {
+public class I18nController {
 
     private final GreetingService greetingService;
 
-    public MyController(@Qualifier("myControllerGreetingService") GreetingService greetingService) {
+    public I18nController(@Qualifier("I18nService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
-    public String sayHello(){
+    public String sayGreeting(){
         return greetingService.sayGreeting();
     }
 }

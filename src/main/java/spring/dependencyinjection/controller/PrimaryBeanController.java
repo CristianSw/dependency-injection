@@ -1,19 +1,18 @@
 package spring.dependencyinjection.controller;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import spring.dependencyinjection.services.GreetingService;
 
 @Controller
-public class MyController {
+public class PrimaryBeanController {
 
-    private final GreetingService greetingService;
+    GreetingService greetingService;
 
-    public MyController(@Qualifier("myControllerGreetingService") GreetingService greetingService) {
+    public PrimaryBeanController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
-    public String sayHello(){
+    public String sayGreeting(){
         return greetingService.sayGreeting();
     }
 }
