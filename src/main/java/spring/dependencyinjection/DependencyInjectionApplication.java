@@ -34,5 +34,9 @@ public class DependencyInjectionApplication {
         System.out.println("-------------- PRIMARY Bean");
         PrimaryBeanController primaryBeanController = (PrimaryBeanController) ctx.getBean("primaryBeanController");
         System.out.println(primaryBeanController.sayGreeting());
+
+        System.out.println("------------  Animal Controller with profiles");
+        AnimalsController animalsController = (AnimalsController) ctx.getBean("animalsController");
+        System.out.println(animalsController.whichAreTheBest());
     }
 }
