@@ -1,0 +1,32 @@
+# comment
+
+name: Cristian
+
+names: #Comment
+  - Daniela
+  - Aurel
+
+pound_sign: "#"
+
+book:
+  author: Joe Mandela
+  publisher: Librarius
+
+truth: yes
+another_truth: True
+more_truth: true
+
+false: no #False, false, No
+
+string_val: "Some String value"
+
+include_new_lines: |
+  saf afgd dgd
+  dfsdf sdfsdf sdfsd
+  safsdf ssdfsdf sdsfs
+
+ignore_new_lines: >
+  This is just
+  one
+  long stri
+  ng
